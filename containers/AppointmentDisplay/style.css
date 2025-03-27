@@ -1,0 +1,116 @@
+:root {
+    --1-themes-fill-tertiary: rgba(118, 118, 128, 0.12);
+    --1-themes-label-primary: rgba(0, 0, 0, 1);
+    --1-themes-label-secondary: rgba(60, 60, 67, 0.6);
+    --1-themes-label-tertiary: rgba(60, 60, 67, 0.3);
+    --1-themes-system-black: rgba(0, 0, 0, 1);
+    --1-themes-system-green: rgba(49, 200, 89, 1);
+    --1-themes-system-grey: rgba(142, 142, 147, 1);
+    --1-themes-system-grey3: rgba(199, 199, 204, 1);
+    --1-themes-system-grey4: rgba(210, 210, 215, 1);
+    --1-themes-system-orange: rgba(255, 150, 0, 1);
+    --1-themes-system-red: rgba(255, 56, 43, 1);
+    --1-themes-system-white: rgba(255, 255, 255, 1);
+    --1-themes-system-yellow: rgba(255, 205, 0, 1);
+    --1-themes-ui-background-blur: rgba(255, 255, 255, 0.7);
+    --1-themes-ui-caret: rgba(66, 107, 242, 1);
+    --2-responsive-device-width: 430px;
+    --2-responsive-homebar-width: 154px;
+    --colors-system-background-base-primary: rgba(255, 255, 255, 1);
+    --colors-system-background-base-secondary: rgba(242, 242, 247, 1);
+    --colors-system-background-elevated-primary: rgba(242, 242, 247, 1);
+    --colors-system-blue: rgba(0, 122, 255, 1);
+    --colors-system-green: rgba(52, 199, 89, 1);
+    --colors-system-grey-grey-1: rgba(142, 142, 147, 1);
+    --colors-system-grey-grey-2: rgba(174, 174, 178, 1);
+    --colors-system-label-primary: rgba(0, 0, 0, 1);
+    --colors-system-label-secondary: rgba(60, 60, 67, 0.6);
+    --colors-system-label-tertiary: rgba(60, 60, 60, 0.3);
+    --colors-system-material-background-regular: rgba(249, 249, 249, 0.78);
+    --colors-system-material-background-thick: rgba(253, 253, 253, 0.92);
+    --colors-system-material-background-ultra-thin: rgba(240, 240, 240, 0.38);
+    --colors-system-separator-non-opaque: rgba(229, 229, 234, 1);
+  }
+  
+  /*
+  
+  To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+  
+  <body data-1-themes-mode="light">
+      <!-- the rest of your content -->
+  </body>
+  
+  You can apply the theme on any DOM node, not just the `body`
+  
+  */
+  
+  [data-1-themes-mode="light"] {
+    --1-themes-fill-tertiary: rgba(118, 118, 128, 0.12);
+    --1-themes-label-primary: rgba(0, 0, 0, 1);
+    --1-themes-label-secondary: rgba(60, 60, 67, 0.6);
+    --1-themes-label-tertiary: rgba(60, 60, 67, 0.3);
+    --1-themes-system-green: rgba(49, 200, 89, 1);
+    --1-themes-system-grey3: rgba(199, 199, 204, 1);
+    --1-themes-system-grey4: rgba(210, 210, 215, 1);
+    --1-themes-system-orange: rgba(255, 150, 0, 1);
+    --1-themes-system-red: rgba(255, 56, 43, 1);
+    --1-themes-system-yellow: rgba(255, 205, 0, 1);
+    --1-themes-ui-background-blur: rgba(255, 255, 255, 0.7);
+  }
+  
+  [data-1-themes-mode="dark"] {
+    --1-themes-fill-tertiary: rgba(118, 118, 128, 0.24);
+    --1-themes-label-primary: rgba(255, 255, 255, 1);
+    --1-themes-label-secondary: rgba(235, 235, 245, 0.6);
+    --1-themes-label-tertiary: rgba(235, 235, 245, 0.3);
+    --1-themes-system-green: rgba(45, 210, 87, 1);
+    --1-themes-system-grey3: rgba(70, 70, 73, 1);
+    --1-themes-system-grey4: rgba(55, 55, 57, 1);
+    --1-themes-system-orange: rgba(255, 159, 3, 1);
+    --1-themes-system-red: rgba(254, 67, 54, 1);
+    --1-themes-system-yellow: rgba(254, 215, 2, 1);
+    --1-themes-ui-background-blur: rgba(40, 40, 42, 0.94);
+  }
+  
+  [data-colors-mode="light"] {
+    --colors-system-background-base-primary: rgba(255, 255, 255, 1);
+    --colors-system-background-base-secondary: rgba(242, 242, 247, 1);
+    --colors-system-background-elevated-primary: rgba(242, 242, 247, 1);
+    --colors-system-blue: rgba(0, 122, 255, 1);
+    --colors-system-green: rgba(52, 199, 89, 1);
+    --colors-system-grey-grey-2: rgba(174, 174, 178, 1);
+    --colors-system-label-primary: rgba(0, 0, 0, 1);
+    --colors-system-label-secondary: rgba(60, 60, 67, 0.6);
+    --colors-system-label-tertiary: rgba(60, 60, 60, 0.3);
+    --colors-system-material-background-regular: rgba(249, 249, 249, 0.78);
+    --colors-system-material-background-thick: rgba(253, 253, 253, 0.92);
+    --colors-system-material-background-ultra-thin: rgba(240, 240, 240, 0.38);
+    --colors-system-separator-non-opaque: rgba(229, 229, 234, 1);
+  }
+  
+  [data-colors-mode="dark"] {
+    --colors-system-background-base-primary: rgba(0, 0, 0, 1);
+    --colors-system-background-base-secondary: rgba(28, 28, 30, 1);
+    --colors-system-background-elevated-primary: rgba(28, 28, 30, 1);
+    --colors-system-blue: rgba(10, 132, 255, 1);
+    --colors-system-green: rgba(48, 209, 88, 1);
+    --colors-system-grey-grey-2: rgba(99, 99, 102, 1);
+    --colors-system-label-primary: rgba(255, 255, 255, 1);
+    --colors-system-label-secondary: rgba(235, 235, 245, 0.6);
+    --colors-system-label-tertiary: rgba(235, 235, 245, 0.3);
+    --colors-system-material-background-regular: rgba(0, 0, 0, 0.4);
+    --colors-system-material-background-thick: rgba(0, 0, 0, 0.6);
+    --colors-system-material-background-ultra-thin: rgba(0, 0, 0, 0.1);
+    --colors-system-separator-non-opaque: rgba(56, 56, 58, 1);
+  }
+  
+  [data-2-responsive-mode="15-pro-max"] {
+    --2-responsive-device-width: 430px;
+    --2-responsive-homebar-width: 154px;
+  }
+  
+  [data-2-responsive-mode="15-pro"] {
+    --2-responsive-device-width: 393px;
+    --2-responsive-homebar-width: 140px;
+  }
+  
