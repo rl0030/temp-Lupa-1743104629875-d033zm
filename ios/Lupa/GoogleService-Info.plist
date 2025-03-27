@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDXcnpwtQOAs4Tx6-1LQToMOYXDJ9UQcFU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>439485988903</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.lupa.Lupa</string>
+	<key>PROJECT_ID</key>
+	<string>lupa-bb139</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lupa-bb139.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:439485988903:ios:5c26d807d4280f93b8ce02</string>
+	<key>DATABASE_URL</key>
+	<string>https://lupa-bb139-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
