@@ -1,0 +1,186 @@
+{
+    "Barbell": [
+      {
+        "name": "Barbell",
+        "category": "Barbell",
+        "exercises": [
+          "Deadlift", "Sumo Deadlift", "Snatch Deadlift", "Rack Pull", "Romanian Deadlift", 
+          "1 Leg Romanian Deadlift", "Clean Pull", "Snatch Pull", "Snatch", "Power Snatch", 
+          "Split Snatch", "Clean and Jerk", "Olympic Clean", "Olympic Snatch", "Power Clean", 
+          "Hang Clean", "Squat", "Sumo Squat", "Front Squat", "Zercher Squat", "Box Squat", 
+          "Split Squat", "Overhead Squat", "Lunge", "Reverse Lunge", "Standing Calf Raise", 
+          "Calf Rock", "Bench", "Incline", "Decline", "Close Grip", "Wide Grip", "Overhead Press", 
+          "Seated", "Push Press", "Z-Press", "Push Jerk", "Split Jerk", "Bent over Row", 
+          "Pendlay Row", "Vertical Row", "Upright Row", "Good Morning", "Seated Goodmorning", 
+          "Bar Twist", "Bar Side Crunch", "Barbell Curl", "Reverse Curl", "Incline Curl", 
+          "Concentration Curl", "Skull Crusher", "Tricep Overhead Extension", "Wrist Curl", 
+          "Reverse Wrist Curl", "Back Wrist Curl", "Incline Front Raise", "Pull Over", "Shrug", 
+          "Hip Thrusts", "Thruster", "Ab Roll out", "Landmine Press", "Row", "Single Leg RDL", 
+          "T-Bar Row"
+        ]
+      }
+    ],
+    "Dumbbell": [
+      {
+        "name": "Dumbbell",
+        "category": "Dumbbell",
+        "exercises": [
+          "Deadlift", "Sumo Deadlift", "Romanian Deadlift", "1 Leg Romanian Deadlift", 
+          "1 arm 1 leg RDL", "Clean Pull", "Snatch Pull", "Snatch", "Power Snatch", 
+          "Split Snatch", "Clean and Jerk", "Olympic Clean", "Olympic Snatch", "Power Clean", 
+          "Hang Clean", "Squat", "Sumo Squat", "Goblet Squat", "Box Squat", "Split Squat", 
+          "Overhead Squat", "Lunge", "Reverse Lunge", "Standing Calf Raise", "Calf Rock", 
+          "Bench", "Incline", "Decline", "Close Grip", "Wide Grip", "Overhead Press", "Seated", 
+          "Push Press", "Z-Press", "1 arm", "Kneeling", "1 arm Kneeling", "Alternating", 
+          "Front Raise", "Lateral Raise", "Bent Back Fly", "ITYs", "Bent over Row", 
+          "Pendlay Row", "Vertical Row", "Upright Row", "1 Arm Row", "Seated Rotator Cuff", 
+          "Standing Rotator Cuff", "External+Internal Rotations", "Good Morning", 
+          "Seated Goodmorning", "Barbell Curl", "Reverse Curl", "Incline Curl", 
+          "Concentration Curl", "Skull Crusher", "Tricep Overhead Extension", "Wrist Curl", 
+          "Reverse Wrist Curl", "Back Wrist Curl", "Incline Front Raise", "Pull Over", 
+          "1 arm variants", "Shrug", "Hip Thrusts", "Thruster", "DB crunch", "decline crunch"
+        ]
+      }
+    ],
+    "Kettlebell": [
+      {
+        "name": "Kettlebell",
+        "category": "Kettlebell",
+        "exercises": [
+          "Swings", "1 arm Row", "Overhead Squats", "1 leg DL", "KB Clean and Press", 
+          "Turkish Getup", "Windmills", "Janda Situps", "Snatch", "Clean and Press", 
+          "Thrusters", "OH Lunge", "OH Reverse Lunge", "Squats", "Squat Kicks", 
+          "1 Leg Squat", "Pistol Squat", "Renegade Row", "Sumo Deadlift", "Ohp", 
+          "Floor Press", "Split Squat", "Bent over rows", "Front Squats", "Push Press", 
+          "RDLs", "High Pull", "Squat and Press", "Step Ups"
+        ]
+      }
+    ],
+    "Bodyweight": [
+      {
+        "name": "Bodyweight",
+        "category": "Bodyweight",
+        "exercises": [
+          "Squat", "Squat jump", "Razor curl", "nordic curl", "Lunge", "Reverse Lunge", 
+          "Calf Raise", "Pushup", "Pike Pushup", "Close Grip", "Wide Grip", "1 arm", 
+          "Weighted", "Pull up", "Chin up", "Neutral Grip Pullup", "Front Lever", 
+          "Back Lever", "Muscle Up", "Weighted", "1 arm", "Dips", "Weighted", "Plank", 
+          "side plank", "Weighted", "Supermans", "Sit up", "Ankle Grabs", "Twists", 
+          "Decline", "Hanging Leg Raises", "Knee Raises"
+        ]
+      }
+    ],
+    "Stretches": [
+      {
+        "name": "Stretches",
+        "category": "Stretches",
+        "exercises": []
+      }
+    ],
+    "Cables": [
+      {
+        "name": "Cables",
+        "category": "Cables",
+        "exercises": [
+          "1 Arm", "1 Leg", "1 Arm + 1 Leg", "medium", "low", "high", "handle", "bar", "squat"
+        ]
+      }
+    ],
+    "Machine": [
+      {
+        "name": "Machine",
+        "category": "Machine",
+        "exercises": []
+      }
+    ],
+    "Med Ball": [
+      {
+        "name": "Med Ball",
+        "category": "Med Ball",
+        "exercises": [
+          "Sit ups", "Throws", "Slams"
+        ]
+      }
+    ],
+    "Ropes": [
+      {
+        "name": "Ropes",
+        "category": "Ropes",
+        "exercises": [
+          "Alternating Hands", "Double Hand"
+        ]
+      }
+    ],
+    "Exercise Bands": [
+      {
+        "name": "Exercise Bands",
+        "category": "Exercise Bands",
+        "exercises": [
+          "Banded Marches", "Tube Walks", "Glute Bridges"
+        ]
+      }
+    ],
+    "Exercise Ball": [
+      {
+        "name": "Exercise Ball",
+        "category": "Exercise Ball",
+        "exercises": [
+          "Bosu Ball", "Ball assisted Squat", "Ball assisted movements"
+        ]
+      }
+    ],
+    "Balance Tools": [
+      {
+        "name": "Balance Tools",
+        "category": "Balance Tools",
+        "exercises": [
+          "Foam Pad", "Wedge Step"
+        ]
+      }
+    ],
+    "Step": [
+      {
+        "name": "Step",
+        "category": "Step",
+        "exercises": [
+          "step ups", "lateral step ups", "single leg squats", "calf raises"
+        ]
+      }
+    ],
+    "Hex Bar": [
+      {
+        "name": "Hex Bar",
+        "category": "Hex Bar",
+        "exercises": [
+          "deadlifts"
+        ]
+      }
+    ],
+    "Cardio": [
+      {
+        "name": "Cardio",
+        "category": "Cardio",
+        "exercises": [
+          "Run", "Bike", "Swim", "Machines"
+        ]
+      }
+    ],
+    "Foam Roller": [
+      {
+        "name": "Foam Roller",
+        "category": "Foam Roller",
+        "exercises": [
+          "foam roll x part of body"
+        ]
+      }
+    ],
+    "Ab Roller": [
+      {
+        "name": "Ab Roller",
+        "category": "Ab Roller",
+        "exercises": [
+          "standing ab roll out", "kneeling ab roll out"
+        ]
+      }
+    ]
+  }
