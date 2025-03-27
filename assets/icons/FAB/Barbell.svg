@@ -1,0 +1,11 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Barbell">
+<path id="Vector" d="M16.5 10.5H12C11.1716 10.5 10.5 11.1716 10.5 12V36C10.5 36.8284 11.1716 37.5 12 37.5H16.5C17.3284 37.5 18 36.8284 18 36V12C18 11.1716 17.3284 10.5 16.5 10.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M36 10.5H31.5C30.6716 10.5 30 11.1716 30 12V36C30 36.8284 30.6716 37.5 31.5 37.5H36C36.8284 37.5 37.5 36.8284 37.5 36V12C37.5 11.1716 36.8284 10.5 36 10.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M37.5 15H42C42.3978 15 42.7794 15.158 43.0607 15.4393C43.342 15.7206 43.5 16.1022 43.5 16.5V31.5C43.5 31.8978 43.342 32.2794 43.0607 32.5607C42.7794 32.842 42.3978 33 42 33H37.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M10.5 33H6C5.60218 33 5.22064 32.842 4.93934 32.5607C4.65804 32.2794 4.5 31.8978 4.5 31.5V16.5C4.5 16.1022 4.65804 15.7206 4.93934 15.4393C5.22064 15.158 5.60218 15 6 15H10.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M18 24H30" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M43.5 24H46.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_7" d="M1.5 24H4.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
