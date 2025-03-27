@@ -1,0 +1,8 @@
+Pods/AgoraRtm_iOS/AgoraRtmKit.xcframework/ios-arm64_armv7/AgoraRtmKit.framework/AgoraRtmKit
+Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.xcframework/ios-arm64/GoogleMapsBase.framework/GoogleMapsBase
+Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.xcframework/ios-arm64/GoogleMaps.framework/GoogleMaps
+Pods/GoogleMaps/Maps/Frameworks/GoogleMapsCore.xcframework/ios-arm64/GoogleMapsCore.framework/GoogleMapsCore
+./Pods/AgoraRtm_iOS/AgoraRtmKit.xcframework/ios-arm64_armv7/AgoraRtmKit.framework/AgoraRtmKit
+./Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.xcframework/ios-arm64/GoogleMapsBase.framework/GoogleMapsBase
+./Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.xcframework/ios-arm64/GoogleMaps.framework/GoogleMaps
+./Pods/GoogleMaps/Maps/Frameworks/GoogleMapsCore.xcframework/ios-arm64/GoogleMapsCore.framework/GoogleMapsCore
