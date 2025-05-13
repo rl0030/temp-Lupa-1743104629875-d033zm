@@ -11,11 +11,6 @@ import AuthenticationStack from './pages/Welcome';
 import {StripeProvider, useStripe} from '@stripe/stripe-react-native';
 import Settings from './pages/Settings';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
-import messaging from '@react-native-firebase/messaging';
-import {collection, doc, serverTimestamp, setDoc} from 'firebase/firestore';
-import {auth, db} from './services/firebase';
-import uuid from 'react-native-uuid';
-import BootSplash from 'react-native-bootsplash';
 import notifee from '@notifee/react-native';
 import {
   STRIPE_MERCHANT_IDENTIFIER,
@@ -28,6 +23,7 @@ import {ProgramProvider} from './context/ProgramProvider';
 import {Provider} from 'react-redux';
 import {store} from './services/redux';
 import MixpanelManager from './services/mixpanel/mixpanel';
+import { supabase } from './services/supabase';
 
 // Suppress react native warnings
 // Ignore a specific warning message
@@ -49,24 +45,18 @@ const linking = {
   },
 };
 
-// onMessage handler
-messaging().onMessage(async remoteMessage => {
-  // Extract the notification data from the remote message
-  const {notification} = remoteMessage;
-
-  await notifee.displayNotification({
-    title: notification?.title,
-    body: notification?.body,
-  });
+// onMessage handler for notifications
+notifee.onForegroundEvent(({ type, detail }) => {
+  if (type === 1) { // NotificationEventType.PRESS
+    console.log('User pressed notification', detail.notification);
+  }
 });
 
-// onBackgroundMessage handler
-messaging().setBackgroundMessageHandler(async remoteMessage => {
-  console.log(
-    'Message handled in the background!',
-    JSON.stringify(remoteMessage),
-  );
-  // Handle the received message in the background
+// onBackgroundEvent handler for notifications
+notifee.onBackgroundEvent(async ({ type, detail }) => {
+  if (type === 1) { // NotificationEventType.PRESS
+    console.log('User pressed notification from background', detail.notification);
+  }
 });
 
 function App(): React.JSX.Element {
@@ -95,11 +85,6 @@ function App(): React.JSX.Element {
     MixpanelManager.initialize();
   }, []);
 
-  // Handle splash screen and perform asynchronous task
-  useEffect(() => {
-    setTimeout(async () => await BootSplash.hide({fade: true}), 3000);
-  }, []);
-
   useEffect(() => {
     const getUrlAsync = async () => {
       const initialUrl = await Linking.getInitialURL();
@@ -114,6 +99,23 @@ function App(): React.JSX.Element {
 
     return () => deepLinkListener.remove();
   }, [handleDeepLink]);
+
+  // Set up Supabase auth listener
+  useEffect(() => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(
+      (event, session) => {
+        if (event === 'SIGNED_IN') {
+          console.log('User signed in:', session?.user?.id);
+        } else if (event === 'SIGNED_OUT') {
+          console.log('User signed out');
+        }
+      }
+    );
+
+    return () => {
+      subscription.unsubscribe();
+    };
+  }, []);
 
   return (
     <Provider store={store}>
