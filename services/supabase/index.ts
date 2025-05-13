@@ -2,12 +2,10 @@ import { createClient } from '@supabase/supabase-js';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import 'react-native-url-polyfill/auto';
 
-const supabaseUrl = process.env.SUPABASE_URL || '';
-const supabaseAnonKey = process.env.SUPABASE_ANON_KEY || '';
-
-if (!supabaseUrl || !supabaseAnonKey) {
-  console.error('Supabase URL or Anon Key is missing. Please check your environment variables.');
-}
+// For development, use hardcoded values since environment variables 
+// might not be properly loaded in React Native
+const supabaseUrl = 'https://xyzcompany.supabase.co';
+const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh5emNvbXBhbnkiLCJyb2xlIjoiYW5vbiIsImlhdCI6MTYxNjQyMjI0NywiZXhwIjoxOTMyMDg0MjQ3fQ.example_key';
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
   auth: {

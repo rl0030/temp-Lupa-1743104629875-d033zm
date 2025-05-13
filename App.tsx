@@ -1,5 +1,6 @@
-import React, {useCallback, useEffect} from 'react';
-import {Alert, Linking, StatusBar} from 'react-native';
+import React, {useCallback, useEffect, useState} from 'react';
+import {Alert, Pressable, StyleSheet, Image, View, Text} from 'react-native';
+import Background from './components/Background';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {NavigationContainer} from '@react-navigation/native';
 import {QueryClientProvider} from '@tanstack/react-query';
@@ -24,6 +25,7 @@ import {Provider} from 'react-redux';
 import {store} from './services/redux';
 import MixpanelManager from './services/mixpanel/mixpanel';
 import { supabase } from './services/supabase';
+import SupabaseTest from './pages/SupabaseTest';
 
 // Suppress react native warnings
 // Ignore a specific warning message
@@ -117,6 +119,30 @@ function App(): React.JSX.Element {
     };
   }, []);
 
+  // For testing purposes, show the Supabase test component
+  const [showTest, setShowTest] = useState(true);
+
+  if (showTest) {
+    return (
+      <GluestackUIProvider config={config}>
+        <SupabaseTest />
+        <Pressable 
+          style={{
+            position: 'absolute', 
+            bottom: 20, 
+            alignSelf: 'center',
+            backgroundColor: 'rgba(73, 190, 255, 0.44)',
+            padding: 15,
+            borderRadius: 10
+          }}
+          onPress={() => setShowTest(false)}
+        >
+          <Text style={{ color: 'white', fontWeight: 'bold' }}>Continue to App</Text>
+        </Pressable>
+      </GluestackUIProvider>
+    );
+  }
+
   return (
     <Provider store={store}>
       <StripeProvider
@@ -128,10 +154,6 @@ function App(): React.JSX.Element {
             <GestureHandlerRootView style={{flex: 1}}>
               <NavigationContainer linking={linking}>
                 <RecoilRoot>
-                  <StatusBar
-                    barStyle={'light-content'}
-                    backgroundColor={backgroundStyle.backgroundColor}
-                  />
                   <AuthenticationStack />
                 </RecoilRoot>
               </NavigationContainer>
